@@ -1,9 +1,10 @@
 {
   "name": "DGR-01",
+  "projectId": "40b0b878-b7a0-42d2-b924-7632e6c04ea1",
   "description": "Proceso en blanco",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Database.Activities": "[1.7.1]",
+    "UiPath.Database.Activities": "[1.8.2-preview]",
     "UiPath.Excel.Activities": "[2.11.1-preview]",
     "UiPath.Mail.Activities": "[1.11.2-preview]",
     "UiPath.System.Activities": "[21.8.0-preview]",
@@ -16,10 +17,12 @@
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
+    "netFrameworkLazyLoading": false,
     "isPausable": true,
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -27,7 +30,8 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -40,7 +44,8 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": false
+    "modernBehavior": false,
+    "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
